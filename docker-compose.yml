@@ -8,6 +8,7 @@ services:
     expose:
       - 8088
     env_file:
+      - .env_db
       - .env_app
     command: gunicorn mainapp.wsgi:application --bind 0.0.0.0:8088 --reload
     depends_on:

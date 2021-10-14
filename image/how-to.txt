@@ -1,3 +1,0 @@
-Используется для сборки образа для использования для девелопмента/эксплуатации
-запускается 
-```docker build -f Dockerfile.bindep --build-arg DOCKER_USER=$(whoami) -t robodjango3.8:latest .```
