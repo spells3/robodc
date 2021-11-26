@@ -26,7 +26,7 @@ if DJANGO_ENV == 'development' or DJANGO_ENV == 'production':
         SECRET_KEY = 'localsecret'
 
     try:
-        DEBUG = int(os.environ.get("DEBUG", default=0))
+        DEBUG = bool(int(os.environ.get("DEBUG", default=0)))
     except:
         DEBUG = False
 
